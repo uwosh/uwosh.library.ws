@@ -1,0 +1,111 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.library.ws">
+
+   
+    
+    <!-- Web Service Registration
+     * Any new Web Service controller name should be Registered Here.
+     * Any new Web Services classes/interfaces should be in register.py file.
+     * Note: All Web Services use based off BrowserView.
+     -->
+    
+    <browser:page
+        for=".register.IWSGroupfinder"
+        name="getGroupFinderEvents"
+        class=".register.WSGroupfinder"
+        permission="zope.Public"
+    />
+
+    <browser:page
+        for=".register.IWSLibraryHours"
+        name="getLibraryHours"
+        class=".register.WSLibraryHours"
+        permission="zope.Public"
+    />
+    
+    <browser:page
+        for=".register.IWSLibraryAvailability"
+        name="getAvailableResources"
+        class=".register.WSLibraryAvailability"
+        permission="zope.Public"
+	/>
+	
+    <browser:page
+        for=".register.IWSSetResourceAvailability"
+        name="setAvailability"
+        class=".register.WSSetResourceAvailability"
+        permission="zope.Public"
+    />
+	<browser:page
+		for=".register.IWSSetResourceAvailability"
+		name="setAvailability.php"
+		class=".register.WSSetResourceAvailability"
+		permission="zope.Public"
+	/>
+	
+	<browser:page
+		for=".register.IWSGetSiteIndex"
+		name="getSiteIndex"
+		class=".register.WSGetSiteIndex"
+		permission="zope.Public"
+	/>
+	
+	<browser:page
+		for=".register.IWSSolrSiteAndCoursesSearch"
+		name="getSuggestions"
+		class=".register.WSSolrSiteAndCoursesSearch"
+		permission="zope.Public"
+	/>
+
+    <browser:page
+        for=".register.IWSSolrGetSuggestedCourses"
+        name="getSuggestedCourses"
+        class=".register.WSSolrGetSuggestedCourses"
+        permission="zope.Public"
+    />
+    
+    <browser:page
+        for=".register.IWSSolrGetSummerSessionCourses"
+        name="getSummerSessionCourses"
+        class=".register.WSSolrGetSummerSessionCourses"
+        permission="zope.Public"
+    />
+
+    <browser:page
+        for=".register.IWSSolrCOBCourses"
+        name="getCOBCourses"
+        class=".register.WSSolrCOBCourses"
+        permission="zope.Public"
+    />
+
+    <browser:page
+        for=".register.IGetBookByBidId"
+        name="getBookByBibID"
+        class=".register.GetBookByBidId"
+        permission="zope.Public"
+    />
+    
+    <browser:page
+        for=".register.IGetSubjectGuide"
+        name="getSubjectGuide"
+        class=".register.GetSubjectGuide"
+        permission="zope.Public"
+    />
+    
+    <browser:page
+        for=".register.IGetAnalyticGroup"
+        name="getAnalyticsUserGroup"
+        class=".register.GetAnalyticGroup"
+        permission="zope.Public"
+    />
+	
+    <browser:page
+        for=".register.IGetDatabaseInformation"
+        name="getDatabaseInformation"
+        class=".register.GetDatabaseInformation"
+        permission="zope.Public"
+    />
+	
+</configure>

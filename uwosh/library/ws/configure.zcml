@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="uwosh.library.ws">
+    
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package=".core" />
+  <include package=".db" />
+  <include package=".external" />
+  <include package=".util" />  
+  <include package=".services" />  
+  <include file="register.zcml" />  
+  <include package=".upgrades" />
+  
+  <!-- Register the installation GenericSetup extension profile -->
+  <gs:registerProfile
+      name="default"
+      title="uwosh.library.ws"
+      directory="profiles/default"
+      description="Library Web Services"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  
+</configure>

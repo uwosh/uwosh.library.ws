@@ -1,0 +1,141 @@
+Changelog
+=========
+
+0.1.21
+------
+- Adjusted getSubjectGuide to enforce new news policy
+
+0.1.20
+------
+- Adjusted getSiteIndex to determine Default Views
+
+0.1.19
+------
+- Fixed hours cache bug of duplicated closed hours
+
+0.1.18
+------
+- Added getDatabaseInformation web service
+
+0.1.17
+------
+- Using a LibraryCache to store google calendar data for hours lookup
+
+0.1.16
+------
+- Changed from getAnalyticUserGroup to getAnalyticsUserGroup
+
+0.1.15
+------
+- Added getAnalyticUserGroup Service
+
+0.1.14
+------
+- Solr Services Migrated to 4.1
+
+0.1.13
+------
+- Updated availability tracking for Polk Lab
+
+0.1.12
+------
+- Added study rooms to real-time availability tracking
+
+0.1.11
+------
+- setAvailability, added misc mac tracking.
+- getAvailability v2 sends mac data.
+
+0.1.10
+------
+- setAvailability, added mac tracking.
+
+0.1.9
+-----
+- getAvailableResources version 2 added
+
+0.1.8
+-----
+- getBooksByBibID now limits location data
+
+0.1.7
+-----
+- Adjusted getSiteIndex, handles files and news items
+
+0.1.6
+-----
+- Fixed getLibraryHours?v=2 bug issue
+- getLibraryHours?v=2 only returns 5 days rather than 8 days.
+
+0.1.5
+-----
+- Removed getLibraryHours?v=2 middle cache layer, caused race conditions
+- Changed getLibraryHours?v=2 cache time to 15 minutes.
+
+0.1.4
+-----
+- Refined getSiteIndex, removes excluded, handles folders now.
+
+0.1.3
+-----
+- setup better handling when services are unavailable.
+
+0.1.2
+-----
+- getSiteIndex now pulls Research Databases.
+
+0.1.1
+-----
+- Added getBookByBibID Service
+
+0.1.0
+-----
+- Fixed bug in COB, very small, security was stripping "*"
+
+0.0.9
+-----
+- Added COB services
+
+0.0.8
+-----
+- Made SummerSessions sortable.
+
+
+0.0.7
+-----
+- Solr web services more accurate, strips out all non-essential chars.
+
+
+0.0.6
+-----
+- Solr supports boosting.  WS now reflect those changes.
+
+
+0.0.5
+-----
+- Fixes SqlAlchemy closing bug, now forces engine to unbind and close.
+
+
+0.0.4
+-----
+- Fixed getSiteIndex, it wasn't returning the parent_area correctly.
+
+0.0.3
+-----
+- Small changes.
+
+0.0.2
+-----
+- Added SiteSearch and CourseSearch Combo
+
+0.0.1
+-----
+- This product was developed in uwosh.librarygroupfinder
+- Product was split and became.
+
+
+0.0.1 (xxxx-xx-xx)
+------------------
+
+- Created recipe with ZopeSkel
+  [David Hietpas]

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<object name="portal_properties" meta_type="Plone Properties Tool">
+	
+	 <object name="webservice_ip_restrictions" meta_type="Plone Property Sheet">
+	 	 <property name="title" type="string" purge="False">Restricts Services to these IP's</property>
+		 <property name="help" type="text" purge="False">Property name is mapped to python file name. One IP per line.  * means all.</property>
+		 
+		 <property name="get_suggested_courses" type="lines" purge="False"><element value="*" /></property>
+		 <property name="get_summer_session_courses" type="lines" purge="False"><element value="*" /></property>
+		 <property name="groupfinder" type="lines" purge="False"><element value="*" /></property>
+		 <property name="libraryhours" type="lines" purge="False"><element value="*" /></property>
+		 <property name="resourceavailability" type="lines" purge="False"><element value="*" /></property>
+		 <property name="setavailability" type="lines" purge="False"><element value="*" /></property>
+		 <property name="get_site_index" type="lines" purge="False"><element value="*" /></property>
+		 <property name="search_site_and_courses" type="lines" purge="False"><element value="*" /></property>
+		 <!-- Add new IP Restrictions Here -->
+	 </object>
+ 
+ 	 <object name="webservice_properties" meta_type="Plone Property Sheet">
+ 	 	 <property name="title" type="string" purge="False">Web Service Information</property>
+		 <property name="help" type="text" purge="False">For msg_open use {time} for location of time in message.</property>
+		 
+		 <property name="msg_override" type="string" purge="False">All Night Study</property>
+		 <property name="msg_open" type="string" purge="False">OPEN until {time}</property>
+		 <property name="msg_closed" type="string" purge="False">Closed</property>
+		 <property name="is_msg_override_on" type="boolean" purge="False">False</property>
+		 <property name="library_hours_url" type="string" purge="False">http://www.uwosh.edu/library/hours/home.html</property>
+		 <property name="current_term_code" type="string" purge="False">0665</property>
+     </object>
+	 
+ 
+ 	 <object name="external_resources" meta_type="Plone Property Sheet">
+		 <property name="title" type="string" purge="False">External Resource Properties</property>
+	     <property name="help" type="text" purge="False">Contains URLs to various external services.</property>
+		 
+		 <property name="solr_url" type="string" purge="False">http://123.456.78.9:8080/solr-aleph/</property>
+		 <property name="computer_availability_db" type="string" purge="False">root:@localhost:3306/libraryresources</property>
+ 	 </object>
+ 
+	 <object name="zodb_properties" meta_type="Plone Property Sheet">
+	 	 <property name="title" type="string" purge="False">ZODB Cache</property>
+		 <property name="help" type="text" purge="False">This is for any additional ZODB added, the location of the FileStorage</property>
+		 
+		 <property name="zodb_cache_file" type="string" purge="False">C:/Plone4/var/filestorage/cache.fs</property>
+	 </object>
+ 
+</object>

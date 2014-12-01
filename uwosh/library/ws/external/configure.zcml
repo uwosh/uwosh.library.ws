@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="uwosh.library.ws">
+    
+  	<adapter factory=".hours_cache.HoursCache"
+	         name="HoursCache" />
+			 
+  	<adapter factory=".hours_cache.HoursCacheEmpty"
+	         name="HoursCacheEmpty" />
+			 
+  	<adapter factory=".hours_cache.FakeHoursCache"
+	         name="FakeHoursCache" />
+	
+</configure>
